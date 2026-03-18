@@ -1,9 +1,9 @@
-// app/build.gradle
 plugins {
     id 'com.android.application'
 }
 
 android {
+    namespace 'com.example.qqmusicadblock'  // 👈 添加这一行！
     compileSdk 34
 
     defaultConfig {
@@ -17,7 +17,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -33,5 +32,4 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    // 其他依赖...
 }
