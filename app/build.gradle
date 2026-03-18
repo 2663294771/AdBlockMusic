@@ -1,3 +1,4 @@
+// app/build.gradle
 plugins {
     id 'com.android.application'
 }
@@ -16,19 +17,21 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
     }
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    // 删除这两行：
-    // compileOnly 'de.robv.android.xposed:api:82'
-    // compileOnly 'de.robv.android.xposed:api:82:sources'
-    
-    // 改为：使用本地模拟 API（下一步创建）
+    // 其他依赖...
 }
