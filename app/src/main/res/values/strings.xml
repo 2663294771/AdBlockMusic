@@ -1,1 +1,4 @@
-
+<resources>
+    <string name="app_name">QQ音乐去广告</string>
+    <string name="xposed_desc">屏蔽QQ音乐 v20.2.0.8 广告</string>
+</resources>
