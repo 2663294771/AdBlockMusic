@@ -1,9 +1,13 @@
+// Top-level build file
 plugins {
-    id 'com.android.application' version '8.3.0' apply false
+    id 'com.android.application' version '8.3.0' apply true
 }
 
-android {
-    compileSdk 34
+// ❌ 删除这一整段！
+// android {
+//     compileSdk 34
+//     // ...
+// }
 
     defaultConfig {
         applicationId "com.example.qqmusicadblock"
