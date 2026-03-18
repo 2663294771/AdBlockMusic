@@ -1,1 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ音乐去广告设置"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/cb_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏蔽开屏广告"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/cb_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏蔽播放页横幅"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/cb_me_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏蔽“我的”页面广告"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/cb_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏蔽弹窗/VIP推广"
+        android:checked="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="重启 QQ 音乐生效"
+        android:textColor="#FF0000" />
+
+</LinearLayout>
