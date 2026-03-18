@@ -2,23 +2,17 @@
     package="com.example.qqmusicadblock">
 
     <application
-        android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher"
-        android:allowBackup="false">
+        android:hasCode="true">
+        
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="屏蔽 QQ 音乐广告" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54" />
 
-        <meta-data android:name="xposedmodule" android:value="true" />
-        <meta-data android:name="xposeddescription" android:value="@string/xposed_desc" />
-        <meta-data android:name="xposedminversion" android:value="82" />
-        <meta-data android:name="xposedscope" android:value="com.tencent.qqmusic" />
-
-        <activity
-            android:name=".SettingsActivity"
-            android:exported="true"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
-            </intent-filter>
-        </activity>
     </application>
 </manifest>
